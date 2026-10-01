@@ -1,0 +1,45 @@
+digibuddy — third-party notice
+==============================
+
+The MIT license in LICENSE covers the digibuddy SOURCE CODE. Everyone is free
+to use, modify, and redistribute that code, commercially or otherwise.
+
+This notice lives in its own file rather than at the bottom of LICENSE so that
+GitHub, PyPI, and automated license scanners can identify the license as plain
+MIT. Appending text to the license text itself made every one of them report
+the license as "Other", which made the project look less usable than it is.
+
+BUILT ON TUIPET
+---------------
+
+digibuddy is a companion for tuipet (https://github.com/joeltco/tuipet),
+Copyright (c) 2026 Joel Taylor, released under the MIT License.
+
+The export scripts in tools/ import tuipet's package directly
+(tools/export_sprites.py uses `from tuipet import data, egg`;
+tools/export_digidex.py uses `from tuipet import data, lines`), so tuipet's
+MIT copyright notice must travel with any redistribution of this repository.
+digibuddy resolves and reads tuipet's save.json read-only; it never writes to
+it, and no save file is distributed with this repository.
+
+WHAT THE MIT LICENSE DOES NOT COVER
+-----------------------------------
+
+digibuddy ships no game assets of its own. The audio and sprite files it
+loads at runtime are derived from DVPet (https://theundersigned.itch.io/dvpet),
+a Digimon fan game, and from the Digimon franchise (© Bandai). Those assets
+are the property of their respective owners and are NOT licensed here:
+
+- public/sounds/*.wav — 35 files, byte-identical copies of tuipet's data/sounds.
+- public/sprites.json — sprite atlas extracted from tuipet's game data.
+- public/digidex.json — knowledge exported from tuipet's data (creature names,
+  evolution lines, care rules). Creature names are © Bandai.
+
+Regenerate sprites and digidex from your own copy of tuipet with:
+
+    python tools/export_sprites.py
+    python tools/export_digidex.py
+
+The Digimon franchise and all creature names, designs, and sprites are
+© Bandai. digibuddy is a non-commercial fan project, not affiliated with or
+endorsed by Bandai.
