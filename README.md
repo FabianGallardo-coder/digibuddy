@@ -1,9 +1,20 @@
 # digibuddy
 
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+![Tauri](https://img.shields.io/badge/Tauri-2-24C8DB?logo=tauri&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-local%20LLM-ffffff)
+![TypeScript](https://img.shields.io/badge/TypeScript-Vite-3178C6?logo=typescript&logoColor=white)
+
 Mascota de escritorio para [tuipet](https://github.com/joeltco/tuipet): un
 Digimon que pasea
 por tu pantalla, habla contigo con IA local y observa tu partida — **sin
 tocarla**.
+
+![digibuddy: pasea, abre el chat con un clic y responde con IA local](media/demo.gif)
+
+Pasea por tu escritorio, le preguntas algo con un clic y responde con
+Ollama en local (o con sus reglas si Ollama está apagado). Nunca escribe
+tu save.
 
 ## Qué hace
 

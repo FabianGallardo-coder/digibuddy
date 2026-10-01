@@ -65,10 +65,8 @@ export class Walker {
       const maxX = a.left + a.width - WIN_W - 8;
       this.tx = minX + Math.random() * Math.max(1, maxX - minX);
       this.ty = this.floorY(a as never);
-      await this.step(a);
-    } else {
-      this.schedule(a, 2000 + Math.random() * 7000); // idle pause between walks
     }
+    await this.step(a);
   }
 
   private async step(a: Record<string, number>): Promise<void> {
