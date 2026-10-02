@@ -40,9 +40,9 @@ function Convert-Page {
 
     $text = [System.IO.File]::ReadAllText($Path)
 
-    # drop YAML front matter (--- ... ---)
-    if ($text -match '\A---\r?\n.*?\r?\n---\r?\n') {
-        $text = $text -replace '\A---\r?\n.*?\r?\n---\r?\n', ''
+    # drop YAML front matter (--- ... ---) — (?s): . must match newlines
+    if ($text -match '\A(?s)---\r?\n.*?\r?\n---\r?\n') {
+        $text = $text -replace '\A(?s)---\r?\n.*?\r?\n---\r?\n', ''
     }
 
     # Liquid baseurl -> plain relative link (wiki resolves [x](page))
