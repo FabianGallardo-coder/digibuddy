@@ -1,15 +1,14 @@
 ---
 title: Save watcher
+icon: 🛡️
 layout: default
 nav_order: 5
 description: "The read-only guarantee: how the save is found, watched and never written"
 ---
 
 # Save watcher
-{: .fs-6 .fw-300 }
 
 digibuddy **never writes `save.json`**. It only mirrors what tuipet saves.
-{: .fs-5 .fw-300 .text-red-700 }
 
 ## Where the save is found
 
@@ -52,4 +51,4 @@ gitignored SQLite file — completely separate from the game save.
 This is what lets the pet "live" with your game without any risk of
 corruption: even a crash of digibuddy can't damage your progress.
 
-Next: [Architecture]({{ site.baseurl }}/architecture/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
+Next: <a class="btn btn-primary" href="{{ site.baseurl }}/architecture/">Architecture</a>

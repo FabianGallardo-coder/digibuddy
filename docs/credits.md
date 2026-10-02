@@ -1,12 +1,12 @@
 ---
 title: Credits
+icon: 📜
 layout: default
 nav_order: 9
 description: "Licensing: MIT code, © Bandai assets, tuipet, NOTICE"
 ---
 
 # Credits & licensing
-{: .fs-6 .fw-300 }
 
 ## The short version
 

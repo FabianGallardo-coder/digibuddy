@@ -1,16 +1,15 @@
 ---
 title: Architecture
+icon: 🏗️
 layout: default
 nav_order: 6
 description: "Frontend modules, Rust backend, data flow and configuration"
 ---
 
 # Architecture
-{: .fs-6 .fw-300 }
 
 Tauri 2 app: TypeScript + Vite frontend, Rust backend, transparent overlay
 window.
-{: .fs-5 .fw-300 }
 
 ## Big picture
 
@@ -91,4 +90,4 @@ python tools/export_digidex.py   # → public/digidex.json
 
 Licensing details in [Credits]({{ site.baseurl }}/credits/).
 
-Next: [Development]({{ site.baseurl }}/development/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
+Next: <a class="btn btn-primary" href="{{ site.baseurl }}/development/">Development</a>

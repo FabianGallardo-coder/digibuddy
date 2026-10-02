@@ -1,15 +1,14 @@
 ---
 title: User guide
+icon: 🎮
 layout: default
 nav_order: 3
 description: "Controls, right-click menu, chat, reminders and model switching"
 ---
 
 # User guide
-{: .fs-6 .fw-300 }
 
 How to interact with your digibuddy day to day.
-{: .fs-5 .fw-300 }
 
 ## Controls
 
@@ -77,4 +76,4 @@ Reload the pet afterwards. Popular picks:
 Hatches, evolutions, battles, feeding — the pet has sounds for the important
 events of your tuipet game. Mute your system if the pet is at work with you.
 
-Next: [Chat & Ollama]({{ site.baseurl }}/chat-and-ollama/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
+Next: <a class="btn btn-primary" href="{{ site.baseurl }}/chat-and-ollama/">Chat & Ollama</a>

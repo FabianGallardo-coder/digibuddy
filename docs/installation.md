@@ -1,16 +1,15 @@
 ---
 title: Installation
+icon: 📥
 layout: default
 nav_order: 2
 description: "Installers for Windows, macOS and Linux, plus building from source"
 ---
 
 # Installation
-{: .fs-6 .fw-300 }
 
 Prebuilt installers for every platform live on the
 **[Releases page](https://github.com/FabianGallardo-coder/digibuddy/releases/latest)**.
-{: .fs-5 .fw-300 }
 
 ## Prerequisites
 
@@ -74,4 +73,4 @@ Python 3 is only needed if you regenerate the game sprites — see
 - digibuddy only needs read access to your tuipet save —
   see [Save watcher]({{ site.baseurl }}/save-watch/).
 
-Next: [User guide]({{ site.baseurl }}/user-guide/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
+Next: <a class="btn btn-primary" href="{{ site.baseurl }}/user-guide/">User guide</a>
