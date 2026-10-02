@@ -51,6 +51,19 @@ function Convert-Page {
     $text = $text -replace '\{\{\s*site\.baseurl\s*\}\}', $pagesUrl
     # just-the-docs button/class annotations are meaningless on the wiki
     $text = $text -replace '\{:\s*\.[^}]+\}', ''
+    # the doc-cards grid is Liquid-generated (no loop exists on the wiki):
+    # replace it with a static link list built from the map below
+    $linkLines = foreach ($k in $pages.Keys) {
+        if ($k -eq 'index.md') { continue }
+        $t = [IO.Path]::GetFileNameWithoutExtension($k) -replace '-', ' '
+        $w = ($pages[$k] -replace '\.md$', '')
+        "* [$t]($w)"
+    }
+    $text = $text -replace '(?s)<div class="doc-grid">.*?</div>', (($linkLines -join "`n") + "`n")
+    # drop Liquid control tags on their own line (for/unless/assign/endfor/...)
+    $text = $text -replace '(?m)^\s*\{%[^%]*%\}\s*\r?\n', ''
+    # drop leftover Liquid output expressions ({{ p.icon }}, {{ p.url }}...)
+    $text = $text -replace '\{\{[^}]*\}\}', ''
     # ensure a single H1 title at the top
     if ($text -notmatch '(?m)^# ') {
         $text = "# $Title`n`n" + $text
@@ -75,6 +88,7 @@ foreach ($src in $pages.Keys) {
     $srcPath = Join-Path $docsDir $src
     if (-not (Test-Path $srcPath)) { Write-Warning "missing $src"; continue }
     $title  = [IO.Path]::GetFileNameWithoutExtension($src).Replace('-', ' ')
+    if ($src -eq 'index.md') { $title = 'Home' }
     $out    = Convert-Page -Path $srcPath -Title $title
     $dest   = Join-Path $cloneDir $pages[$src]
     [System.IO.File]::WriteAllText($dest, $out, $utf8NoBom)
