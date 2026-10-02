@@ -1,0 +1,13 @@
+{% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
+<nav class="docs-nav" aria-label="Documentation sections">
+  <p class="docs-nav__label" id="docs-nav-label">Documentation</p>
+  <ul aria-labelledby="docs-nav-label">
+    {% for p in nav_pages %}
+    <li>
+      <a href="{{ p.url | relative_url }}"{% if p.url == page.url %} aria-current="page"{% endif %}>
+        <span class="nav-icon" aria-hidden="true">{{ p.icon }}</span>{{ p.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

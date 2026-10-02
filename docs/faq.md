@@ -1,12 +1,12 @@
 ---
 title: FAQ
+icon: ❓
 layout: default
 nav_order: 8
 description: "SmartScreen, Gatekeeper, models, save safety, legal"
 ---
 
 # FAQ
-{: .fs-6 .fw-300 }
 
 ## Windows warns me — "Windows protected your PC"
 
@@ -67,4 +67,4 @@ The code is MIT — yes. The sprites/knowledge files are derived from tuipet and
 Digimon assets and must be regenerated from your own copy (see
 [Development]({{ site.baseurl }}/development/)).
 
-Next: [Credits]({{ site.baseurl }}/credits/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
+Next: <a class="btn btn-primary" href="{{ site.baseurl }}/credits/">Credits</a>

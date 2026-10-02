@@ -1,16 +1,15 @@
 ---
 title: Chat & Ollama
+icon: 🧠
 layout: default
 nav_order: 4
 description: "Local LLM chat, digipedia grounding, offline fallback and privacy"
 ---
 
 # Chat & Ollama
-{: .fs-6 .fw-300 }
 
 The chat runs 100% on your machine through
 [Ollama](https://ollama.com) — no cloud, no API keys, no telemetry.
-{: .fs-5 .fw-300 }
 
 ## How a message travels
 
@@ -68,4 +67,4 @@ Any Ollama model tag works: `ollama pull <tag>` first.
 | Telemetry / analytics | **None** — none exists |
 | Update checks | **None** — install manually from Releases |
 
-Next: [Save watcher]({{ site.baseurl }}/save-watch/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
+Next: <a class="btn btn-primary" href="{{ site.baseurl }}/save-watch/">Save watcher</a>

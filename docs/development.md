@@ -1,15 +1,14 @@
 ---
 title: Development
+icon: ⚙️
 layout: default
 nav_order: 7
 description: "Setup, project layout, CI and the release process"
 ---
 
 # Development
-{: .fs-6 .fw-300 }
 
 Contributions and local hacking are welcome.
-{: .fs-5 .fw-300 }
 
 ## Prerequisites
 
@@ -98,4 +97,4 @@ Documentation lives in `docs/` and is published by GitHub Pages. After editing:
 pwsh tools/sync-wiki.ps1
 ```
 
-Next: [FAQ]({{ site.baseurl }}/faq/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
+Next: <a class="btn btn-primary" href="{{ site.baseurl }}/faq/">FAQ</a>
