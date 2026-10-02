@@ -1,0 +1,29 @@
+title: digibuddy
+description: Desktop Digimon pet that walks your screen and chats with your local LLM
+remote_theme: just-the-docs/just-the-docs
+
+color: teal
+url: https://fabiangallardo-coder.github.io
+baseurl: /digibuddy
+permalink: pretty
+
+enable_search: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: Back to top
+
+aux_links:
+  "GitHub":
+    - "https://github.com/FabianGallardo-coder/digibuddy"
+  "Download":
+    - "https://github.com/FabianGallardo-coder/digibuddy/releases/latest"
+aux_links_external: true
+
+gh_edit_link: true
+gh_edit_link_text: Edit this page on GitHub
+gh_edit_repository: https://github.com/FabianGallardo-coder/digibuddy
+gh_edit_branch: Master
+gh_edit_source: docs
+gh_edit_view_mode: edit
+
+footer_content: digibuddy is an independent fan project. © Bandai — not affiliated or endorsed by Bandai.
