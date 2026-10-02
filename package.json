@@ -2,6 +2,12 @@
   "name": "digibuddy",
   "private": true,
   "version": "0.1.0",
+  "description": "Desktop Digimon pet that walks your screen and chats with your local LLM",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FabianGallardo-coder/digibuddy.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",

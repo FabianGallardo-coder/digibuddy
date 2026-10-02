@@ -1,9 +1,12 @@
 [package]
 name = "digibuddy"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+description = "Desktop Digimon pet that walks your screen and chats with your local LLM"
+authors = ["Fabian Gallardo <reactjsvcpz@gmail.com>"]
 edition = "2021"
+license = "MIT"
+repository = "https://github.com/FabianGallardo-coder/digibuddy"
+homepage = "https://github.com/FabianGallardo-coder/digibuddy"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

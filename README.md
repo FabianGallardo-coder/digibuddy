@@ -1,6 +1,7 @@
 # digibuddy
 
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![releases](https://img.shields.io/github/v/release/FabianGallardo-coder/digibuddy?label=release)](https://github.com/FabianGallardo-coder/digibuddy/releases/latest)
 ![Tauri](https://img.shields.io/badge/Tauri-2-24C8DB?logo=tauri&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-local%20LLM-ffffff)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Vite-3178C6?logo=typescript&logoColor=white)
@@ -15,6 +16,18 @@ tocarla**.
 Pasea por tu escritorio, le preguntas algo con un clic y responde con
 Ollama en local (o con sus reglas si Ollama está apagado). Nunca escribe
 tu save.
+
+## Descargar
+
+Instaladores en **[Releases](https://github.com/FabianGallardo-coder/digibuddy/releases/latest)**
+(Windows `.exe`/`.msi`, Linux `.deb`/AppImage, macOS `.dmg`).
+
+- **Windows**: el ejecutable no está firmado — SmartScreen avisa; elige
+  *Más información → Ejecutar de todos modos*.
+- **macOS**: sin firma de Apple — clic derecho → *Abrir* la primera vez.
+- **Linux**: AppImage necesita `chmod +x digibuddy.AppImage && ./digibuddy.AppImage`.
+
+También se puede compilar desde fuente (ver *Arrancar*).
 
 ## Qué hace
 
