@@ -11,6 +11,20 @@ Format: [Keep a Changelog](https://keepachangelog.com/), versions follow
 - English documentation site (`docs/`) published on GitHub Pages, mirrored to
   the repository wiki via `tools/sync-wiki.ps1`
 
+### Changed
+
+- Documentation site rebuilt on a custom design system instead of the
+  `just-the-docs` theme: new landing page (hero, feature grid,
+  auto-generated doc cards), dark mode with persistent toggle, copy buttons
+  on code blocks and a mobile chip navigation
+
+### Fixed
+
+- Wiki sync copied Liquid syntax literally (raw `{% for %}` lines and
+  `{{ p.* }}` placeholders): `tools/sync-wiki.ps1` now strips Liquid tags,
+  maps the doc-cards grid to a static link list and titles the wiki Home
+  page `Home` instead of `index`
+
 ## [0.1.0] - 2026-10-02
 
 ### Added
