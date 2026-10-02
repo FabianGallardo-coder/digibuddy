@@ -13,7 +13,10 @@
 
 param()
 
-$ErrorActionPreference = 'Stop'
+# NB: native git writes progress to stderr; with EAP=Stop PowerShell 5.1 turns
+# that into a terminating error. All failure paths below are explicit throws
+# checked via $LASTEXITCODE, so EAP must stay 'Continue' here.
+$ErrorActionPreference = 'Continue'
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $docsDir  = Join-Path $repoRoot 'docs'
