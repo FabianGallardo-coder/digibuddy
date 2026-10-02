@@ -2,6 +2,7 @@
 
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![releases](https://img.shields.io/github/v/release/FabianGallardo-coder/digibuddy?label=release)](https://github.com/FabianGallardo-coder/digibuddy/releases/latest)
+[![docs](https://img.shields.io/badge/docs-GitHub%20Pages-2ea44f)](https://fabiangallardo-coder.github.io/digibuddy/)
 ![Tauri](https://img.shields.io/badge/Tauri-2-24C8DB?logo=tauri&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-local%20LLM-ffffff)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Vite-3178C6?logo=typescript&logoColor=white)
@@ -28,6 +29,13 @@ Instaladores en **[Releases](https://github.com/FabianGallardo-coder/digibuddy/r
 - **Linux**: AppImage necesita `chmod +x digibuddy.AppImage && ./digibuddy.AppImage`.
 
 También se puede compilar desde fuente (ver *Arrancar*).
+
+## Documentación
+
+Guía completa en **[GitHub Pages](https://fabiangallardo-coder.github.io/digibuddy/)**
+(inglés): instalación, uso, chat con Ollama, watcher del save, arquitectura,
+desarrollo y FAQ. También en la **[Wiki](https://github.com/FabianGallardo-coder/digibuddy/wiki)**
+del repositorio (mismo contenido, espejo sincronizado con `tools/sync-wiki.ps1`).
 
 ## Qué hace
 
